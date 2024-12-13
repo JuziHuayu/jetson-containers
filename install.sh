@@ -10,7 +10,7 @@ INSTALL_PREFIX="/usr/local/bin"
 pip3 --version || sudo apt-get install python3-pip
 
 # install package requirements
-pip3 install -r $ROOT/requirements.txt
+pip3 install -r $ROOT/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # link scripts to path
 sudo ln -sf $ROOT/autotag $INSTALL_PREFIX/autotag
